@@ -24,16 +24,23 @@ int main() {
     // Step 2: Input array elements
     vector<int> arr(n);
     cout << "Enter elements: ";
+    map<int, int> mpp; // Step 3: Precompute using map -- this can be here instead of another loop
     for(int i = 0; i < n; i++){
         cin >> arr[i];
-    }
-
-    // Step 3: Precompute using map
-    map<int, int> mpp;
-
-    for(int i = 0; i < n; i++){
         mpp[arr[i]]++;   // increase frequency
     }
+
+    
+    
+
+    for(int i = 0; i < n; i++){
+        
+    }
+
+    // iterate in the map
+    // for(auto it: mpp){
+    // cout << it.first << "->" << it.second << endl;
+    // }
 
     /*
     Example:
